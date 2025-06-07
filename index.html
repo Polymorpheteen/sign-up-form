@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <title>Sign-up Form</title>
+    <link rel="stylesheet" href="stylesheet.css">
+</head>
+
+<body>
+    <main class="container">
+        <section class="image-section">
+
+            <div class="background-image">
+                <!-- <img src="img/mourad-saadi-GyDktTa0Nmw-unsplash.jpg" alt="Photo by Mourad Saadi"> -->
+            </div>
+
+            <div class="image-content">
+                <img src="img/odin-lined.png" alt="Logo">
+                <h1 class="logo">ODIN</h1>
+            </div>
+
+            <div class="image-credit">
+                Photo by <a href="https://unsplash.com/@mougrapher">Mourad Saadi</a> on <a
+                    href="https://unsplash.com/">Unsplash</a>
+            </div>
+        </section>
+
+        <section class="form-section" aria-label="Registration Form">
+
+            <div class="form-container">
+                <header class="form-header">
+                    <p> This not a real online service! You know You need something like this in your life to help you
+                        realize your deepest dreams. Sign up <em>now</em> to get started.</p>
+                    <p>You <em>know</em> you want to.</p>
+                </header>
+            </div>
+
+            <form action="post">
+                <div class="form">
+                    <fieldset>
+                        <legend class="title">Let's do this!</legend>
+                        <div class="sign-up">
+                            <label for="firstName">First Name</label>
+                            <input type="text" id="firstName" name="firstName">
+
+                            <label for="lastName">Last Name</label>
+                            <input type="text" id="lastName" name="lastName">
+
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email">
+
+                            <label for="phoneNumber">Phone Number</label>
+                            <input type="number" id="phoneNumber" name="phoneNumber">
+
+                            <label for="pwd">Password</label>
+                            <input type="password" id="pwd" name="password">
+
+                            <label for="confirmPwd">Confirm Password</label>
+                            <input type="password" name="confirmPwd" id="confirmPwd">
+                        </div>
+                    </fieldset>
+                </div>
+                <button type="submit" class="submit-btn">Create Account</button>
+            </form>
+
+            <div class="login-link">
+                Already have an account? <a href="#">Log in</a>
+            </div>
+
+        </section>
+    </main>
+
+</body>
+
+</html>
