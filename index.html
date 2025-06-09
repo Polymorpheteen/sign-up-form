@@ -33,7 +33,7 @@
 
         <section class="form-section" aria-label="Registration Form">
 
-            <div class="form-container">
+            <div class="header-container">
                 <header class="form-header">
                     <p> This not a real online service! You know You need something like this in your life to help you
                         realize your deepest dreams. Sign up <em>now</em> to get started.</p>
@@ -41,36 +41,55 @@
                 </header>
             </div>
 
-            <form action="post">
-                <div class="form">
-                    <fieldset>
-                        <legend class="title">Let's do this!</legend>
-                        <div class="sign-up">
+            <form action="post" class="form">
+                <fieldset>
+                    <legend class="form-content">Let's do this!</legend>
+
+                    <div class="form-row">
+                        <div class="form-field">
                             <label for="firstName">First Name</label>
-                            <input type="text" id="firstName" name="firstName">
-
-                            <label for="lastName">Last Name</label>
-                            <input type="text" id="lastName" name="lastName">
-
-                            <label for="email">Email</label>
-                            <input type="email" id="email" name="email">
-
-                            <label for="phoneNumber">Phone Number</label>
-                            <input type="number" id="phoneNumber" name="phoneNumber">
-
-                            <label for="pwd">Password</label>
-                            <input type="password" id="pwd" name="password">
-
-                            <label for="confirmPwd">Confirm Password</label>
-                            <input type="password" name="confirmPwd" id="confirmPwd">
+                            <input type="text" id="firstName" name="firstName" required>
                         </div>
-                    </fieldset>
-                </div>
-                <button type="submit" class="submit-btn">Create Account</button>
+
+                        <div class="form-field">
+                            <label for="lastName">Last Name</label>
+                            <input type="text" id="lastName" name="lastName" required>
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-field">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+
+                        <div class="form-field">
+                            <label for="phoneNumber">Phone Number</label>
+                            <input type="tel" id="phoneNumber" name="phoneNumber" required>
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-field">
+                            <label for="pwd">Password</label>
+                            <input type="password" id="pwd" name="password" required>
+                        </div>
+
+                        <div class="form-field">
+                            <label for="confirmPwd">Confirm Password</label>
+                            <input type="password" name="confirmPwd" id="confirmPwd" required>
+                        </div>
+                    </div>
+
+                </fieldset>
             </form>
 
-            <div class="login-link">
-                Already have an account? <a href="#">Log in</a>
+            <div class="button-section">
+                <button type="submit" class="submit-btn">Create Account</button>
+
+                <div class="login-link">
+                    Already have an account? <a href="#">Log in</a>
+                </div>
             </div>
 
         </section>
